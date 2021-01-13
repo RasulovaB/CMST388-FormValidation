@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #021732;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  width: 50%;
+}
+
+form {
+  margin-block-end: unset;
+}
+
+fieldset {
+  border-width: 5px;
+  border-color: black;
+}
+
+.logo > img {
+  width: 150px;
+  height: 132px;
+}
+
+table {
+  border-collapse: separate;
+  font-size: 20px;
+  font-family: serif;
+}
+
+.ds {
+  padding: 5px 5px;
+  margin-bottom: 5px;
+  border: 2px solid black;
+  margin-top: 10px;
+}
+
+.radioSelect input[type="radio"],
+.checkboxSelect input[type="checkbox"] {
+  display: none;
+}
+
+.radioSelect label:before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  top: 7px;
+  margin: 15px 10px 0 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 11px;
+  border: 2px solid black;
+}
+
+.checkboxSelect label:before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  top: 7px;
+  margin: 10px 5px 5px 5px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+}
+
+.radioSelect label {
+  position: relative;
+}
+
+.checkboxSelect label {
+  position: relative;
+}
+
+.radioSelect label input[type="radio"]:checked + span {
+  /*styles inside circle*/
+  border-radius: 11px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 7px;
+  left: 6px;
+  content: " ";
+  display: block;
+  background-color: blue;
+}
+
+.checkboxSelect label input[type="checkbox"]:checked + span {
+  /*styles inside circle*/
+
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 2px;
+  left: 11px;
+  content: " ";
+  display: block;
+  background-color: blue;
+}
+
+tr > td .mv {
+  left: 12px;
+}
+
+button {
+  background-color: #ffffff;
+  width: 100px;
+  font-size: 16px;
+}
+
+/* validation style */
+input.passed,
+select.passed {
+  padding: 5px 5px;
+  margin-bottom: 5px;
+  border: 2px solid green;
+  margin-top: 10px;
+}
+input.failed,
+select.failed {
+  padding: 5px 5px;
+  margin-bottom: 5px;
+  border: 2px solid red;
+  margin-top: 10px;
+}
+label > i.failed {
+  color: red;
+}
+label > i.passed {
+  color: green;
+}
+p {
+  color: crimson;
+  font-size: 15px;
+}
